@@ -58,12 +58,12 @@ const GlobalStyles = createGlobalStyle`
   --color-title-primary: #404040 ;
   --color-text-base: #404040;
   --color-text-in-blue: #F0F0F7;
-  --color-button-background: #0967ff;
-  --color-button-text: #F0F0F7;
+  --color-button-background: #F0F0F7;
+  --color-button-text: #0967ff;
   --color-link: #0967ff;
   --color-link-background: #0967ff;
   --color-link-with-background: #F0F0F7;
-  --color-text-placeholder: #a8a8b3;
+  --color-text-placeholder: #e9e9e9;
   --color-white: #fff;
   --color-strong-black: #222222;
   --color-weak-black: #2b2b2b;

@@ -31,6 +31,9 @@ const GlobalStyles = createGlobalStyle`
   button{
     cursor: pointer;
   }
+  a{
+    text-decoration: none;
+  }
   body, input, button, textarea{
     font-weight: 500;
     font-size: 1.6rem;
@@ -57,6 +60,9 @@ const GlobalStyles = createGlobalStyle`
   --color-text-in-blue: #F0F0F7;
   --color-button-background: #0967ff;
   --color-button-text: #F0F0F7;
+  --color-link: #0967ff;
+  --color-link-background: #0967ff;
+  --color-link-with-background: #F0F0F7;
   --color-text-placeholder: #a8a8b3;
   --color-white: #fff;
   --color-strong-black: #222222;

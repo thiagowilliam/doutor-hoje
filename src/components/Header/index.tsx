@@ -1,6 +1,9 @@
 import React from 'react';
 
 import Logo from '../../assets/logo.png';
+
+import Anchor from '../Anchor';
+
 import * as S from './styles';
 
 const Header: React.FC = () => {
@@ -11,8 +14,12 @@ const Header: React.FC = () => {
       </a>
 
       <S.WrapperLinks>
-        <S.DefaultLink href="/">login</S.DefaultLink>
-        <S.BlueLink href="/">Cadastrar</S.BlueLink>
+        <Anchor isDefaultLink href="/">
+          login
+        </Anchor>
+        <Anchor isBlueLink href="/">
+          Cadastrar
+        </Anchor>
       </S.WrapperLinks>
     </S.Container>
   );

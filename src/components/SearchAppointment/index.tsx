@@ -1,8 +1,9 @@
 import React from 'react';
 
-import * as S from './styles';
-
 import Icon from '../../assets/icon-doutor.svg';
+import Button from '../Button';
+
+import * as S from './styles';
 
 const SearchAppointment: React.FC = () => {
   return (
@@ -22,7 +23,9 @@ const SearchAppointment: React.FC = () => {
             />
           </S.WrapperInput>
 
-          <button type="button">Buscar</button>
+          <Button isButtonWhite type="button">
+            Buscar
+          </Button>
         </form>
       </S.Container>
     </S.BackgroundBlue>

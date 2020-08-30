@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-import { shade } from 'polished';
+import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
@@ -24,6 +23,11 @@ export const CardType = styled.div`
 `;
 export const BoxCard = styled.article`
   position: relative;
+
+  .marginAnchor {
+    margin-top: 4rem;
+    display: inline-block;
+  }
 `;
 export const TitleCard = styled.div`
   background: var(--color-strong-black);
@@ -51,38 +55,36 @@ export const DescriptionCard = styled.div`
     width: 100%;
     font-size: 1.4rem;
   }
-`;
-const LinkDefault = css`
-  text-decoration: none;
-  transition: all 0.2s;
-`;
 
-export const WrapperLinks = styled.div``;
+  .alignAnchor {
+    font-size: 1.4rem;
+    text-align: left;
+    width: 100%;
+  }
 
-export const DefaultLink = styled.a`
-  ${LinkDefault}
-  color: var(--color-link);
-  margin-right: 2rem;
-  font-size: 1.4rem;
-  text-align: left;
-  display: block;
-  margin: 1.6rem 0;
-  &:hover {
-    color: ${shade(0.2, '#0967ff')};
+  a {
+    display: inline-block;
+    margin: 1.6rem 0;
   }
 `;
 
-export const BlueLink = styled.a`
-  ${LinkDefault}
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  background: var(--color-link-background);
-  color: var(--color-link-with-background);
-  border-radius: 2.4rem;
-  padding: 0.8rem 2.4rem;
-  margin: 1.5rem 0;
-  display: inline-block;
-  &:hover {
-    background: ${shade(0.2, '#0967ff')};
+export const WrapperLinks = styled.div``;
+export const BackgroundBlue = styled.div`
+  background: var(--color-primary);
+  padding: 1.8rem 0;
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.6rem;
+  }
+
+  p {
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.8rem;
+  }
+
+  strong {
+    font-weight: 700;
   }
 `;

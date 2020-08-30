@@ -23,14 +23,6 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: var(--color-button-background);
-      color: var(--color-button-text);
-      border: none;
-      border-radius: 2.4rem;
-      text-transform: uppercase;
-      font-size: 1.6rem;
-      width: 180px;
-      padding: 0.8rem 1.2rem;
     }
   }
 `;

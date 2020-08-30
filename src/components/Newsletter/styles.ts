@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 2.4rem 0;
+  padding: 2.4rem 2rem;
   background: var(--color-secundary);
   flex-direction: column;
 
@@ -16,6 +16,14 @@ export const Container = styled.div`
 
   form {
     width: 70%;
+    display: flex;
+    @media (max-width: 880px) {
+      width: 100%;
+    }
+
+    @media (max-width: 580px) {
+      flex-wrap: wrap;
+    }
   }
 
   input {
@@ -25,13 +33,21 @@ export const Container = styled.div`
     margin: 0 0.8rem;
     border-radius: 2.4rem;
     padding: 0.8rem 1.2rem;
-    width: 70%;
     &::placeholder {
       color: var(--color-text-placeholder);
+    }
+
+    @media (max-width: 580px) {
+      width: 100%;
+      margin: 0 0 1.6rem 0;
     }
   }
 
   button {
     width: 24rem;
+
+    @media (max-width: 580px) {
+      width: 100%;
+    }
   }
 `;

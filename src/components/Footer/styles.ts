@@ -15,13 +15,27 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 1.8rem 0;
+  padding: 1.8rem 2rem;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 980px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const WrapperLinks = styled.div`
   display: flex;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+
+  @media (max-width: 840px) {
+    flex-wrap: wrap;
+    div:first-child {
+      width: 100%;
+      margin-bottom: 3.2rem;
+    }
+  }
 `;
 export const BoxLinks = styled.div`
   color: var(--color-white);
@@ -63,6 +77,10 @@ export const IconWhatsap = styled(FaWhatsapp)`
 
 export const WrapperIcons = styled.div`
   display: flex;
+  @media (max-width: 980px) {
+    width: 100%;
+    margin-top: 3.2rem;
+  }
 
   a {
     background: var(--color-white);

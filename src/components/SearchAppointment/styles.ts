@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 1.8rem 0;
+  padding: 1.8rem 2rem;
   h1 {
     color: var(--color-white);
     font-size: 2.4rem;
@@ -21,6 +21,14 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 680px) {
+      flex-wrap: wrap;
+    }
+    button {
+      @media (max-width: 680px) {
+        width: 100%;
+      }
+    }
   }
 `;
 export const WrapperInput = styled.div`
@@ -32,6 +40,12 @@ export const WrapperInput = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 680px) {
+    width: 100%;
+    margin-bottom: 1.6rem;
+    margin-right: 0;
+  }
 
   select {
     border: none;

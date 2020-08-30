@@ -4,7 +4,7 @@ export const Container = styled.section`
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 1.8rem 0;
+  padding: 1.8rem 2rem;
 
   h2 {
     width: 100%;
@@ -14,7 +14,8 @@ export const Container = styled.section`
   }
 `;
 export const CardType = styled.div`
-  width: 33%;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
   text-align: center;
   img {
@@ -69,6 +70,7 @@ export const DescriptionCard = styled.div`
 `;
 
 export const WrapperLinks = styled.div``;
+
 export const BackgroundBlue = styled.div`
   background: var(--color-primary);
   padding: 1.8rem 0;
@@ -76,6 +78,14 @@ export const BackgroundBlue = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.6rem;
+
+    @media (max-width: 880px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 540px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   p {

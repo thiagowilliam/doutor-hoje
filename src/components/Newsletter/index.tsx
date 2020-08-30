@@ -1,11 +1,16 @@
 import React from 'react';
 
+import Button from '../Button';
 import * as S from './styles';
 
 const Newsletter: React.FC = () => {
   return (
     <S.Container>
-      <h1>Newsletter</h1>
+      <p>Quer receber novidades no seu e-mail</p>
+      <form action="">
+        <input type="text" placeholder="digite seu email" />
+        <Button isButtonBlue>Cadastrar Newsletter</Button>
+      </form>
     </S.Container>
   );
 };
